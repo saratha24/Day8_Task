@@ -1,0 +1,25 @@
+#flex-container{
+    display: flex;
+    height: 300px;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    /*width: 80x;*/
+    height: 80px;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+   flex-grow: 1;
+}
+
+#flex-container div:nth-child(2){
+    order: -1;
+}
+
+#flex-container div:nth-child(3){
+    align-self: flex-start;
+}
+
